@@ -1,47 +1,21 @@
 ---
-# Unique identifier for this document (used in sidebar and routes)
-id: intro # e.g., "intro", "getting-started", "api/auth", must be unique within sidebar
-
-# Title displayed on the page and sidebar
-title: Welcome # e.g., "Getting Started", "API Reference"
-
-# Numerical position in the sidebar under the current category (lower = higher up)
+id: intro # Unique identifier for this document (used in sidebar and routes)
+title: Welcome # Title displayed on the page and sidebar
 sidebar_position: 1 # e.g., 1, 2, 3 — determines vertical order in sidebar
-
-# Custom label for the sidebar (overrides `title`)
-sidebar_label: Introduction # Optional; e.g., "Quick Start", "API Docs"
-
-# If true, this page does NOT appear in the sidebar
-sidebar_hide: false # Values: true | false
-
-# Optional slug override (controls URL path)
-# slug: /welcome # e.g., "/start-here" — defaults to /<folder>/<filename>
-
-# Set a custom permalink (deprecated; use `slug` instead)
-# permalink: /old-url  # Not recommended, kept for legacy compatibility
-
-# Keywords to enhance SEO and internal search
-keywords: [introduction, overview, guide] # array of search keywords
-
-# Description meta tag (used by SEO and social previews)
-description: A concise intro to our project and its structure. # plain text string
-
-# Custom HTML meta tags (advanced SEO/customization)
-tags:
+sidebar_label: Introduction # Custom label for the sidebar (overrides `title`)
+sidebar_hide: false # If true, this page does NOT appear in the sidebar
+# slug: /welcome # Optional slug override (controls URL path) e.g., "/start-here"
+keywords: [introduction, overview, guide] # array of search keywords and for enhance SEO and internal search
+description: A concise intro to our project and its structure. # plain text string, used by SEO and social previews
+head: # Custom HTML meta tags (advanced SEO/customization), goes into head of HTML
   - name: robots
     content: noindex
-
-# Specify page version (used with versioned docs)
 # version: current # e.g., "current", "1.2.0", used in versioned sites
-
-# Allows setting the page as draft (excluded from build output)
-draft: false # Values: true | false (default = false)
-
-# Prevents this doc from being indexed by search engines
-hide_title: false # Hides the H1 title from rendered page — Values: true | false
+draft: false # true shall exclude this page from build output
+hide_title: false # Hides the H1 title from rendered page — Prevents this doc from being indexed by search engines
 
 # Whether to show the table of contents (TOC) sidebar on this page
-hide_table_of_contents: true # Values: true | false
+hide_table_of_contents: false # Values: true | false
 
 # Min/max heading levels to include in TOC (default: 2–3)
 toc_min_heading_level: 2 # Values: 2–6
@@ -63,12 +37,6 @@ toc_max_heading_level: 3 # Values: 2–6
 # Any React component or plugin-specific frontmatter can be added here
 # For example, callouts, banners, etc. can read from frontmatter keys
 ---
-
-<!-- ---
-id: intro
-title: Welcome
-sidebar_position: 1
---- -->
 
 # Tutorial Intro
 
